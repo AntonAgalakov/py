@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python 2022-2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      .header {
+        margin: 40px auto;
+        width: 90%;
+      }
+      .nav {
+        border-radius: 30px;
+        width: 100%;
+      }
+      .header-h1 {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .tasks {
+        margin: 40px auto;
+        width: 90%;
+      }
+      .lesson {
+        margin: 40px auto;
+        width: 90%;
+      }
+
+      #okno {
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        display: none;
+      }
+      #okno:target {display: block;}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img class="nav" src="nav.png">
+      <br>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Практическое занятие 17</li>
+        </ol>
+      </nav>
+      <h1 class="header-h1">Практическое занятие 17</h1>
+    </div>
+
+    <div class="tasks">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+            #1 задание
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Напишите программу, которая меняет местами пары соседних элементов, кроме первого и последнего.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            #2 задание
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            На вход программе подается:
+            <br>1. Зашифрованная строка.
+            <br>2. N – число букв в словаре.
+            <br>3. N строк, в которых в формате «буква: частота» указывается, сколько раз каждая буква встречается в слове.
+            <br>Программа выводит расшифрованное слово.
+            <br>
+            <br>
+            Пример ввода:
+            <br> ?*!*!*
+            <br>3
+            <br>b: 1
+            <br>a: 3
+            <br>n: 2
+            <br>Пример вывода: banana
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+             #3 задание
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Данные об email-адресах студентов хранятся в словаре:
+            <br>
+            <code>
+              emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kirill_stepanov'],
+              <br>'gmail.com': ['alena.semyonova', 'ivan.polekhin', 'marina_abrabova'],
+              <br>'msu.edu': ['sergei.zharkov', 'julia_lyubimova', 'vitaliy.smirnoff'],
+              <br>'yandex.ru': ['ekaterina_ivanova', 'glebova_nastya'],
+              <br>'harvard.edu': ['john.doe', 'mark.zuckerberg', 'helen_hunt'],
+              <br>'mail.ru': ['roman.kolosov', 'ilya_gromov', 'masha.yashkina']}
+            </code>
+            <br>Нужно дополнить код таким образом, чтобы он вывел все адреса в алфавитном порядке и в формате имя_пользователя@домен.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            #4 задание
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+          Сегодня Хаято пришёл из школы с домашним заданием.
+            Для задания Хаято дали массив 𝑎 длины 𝑛 . Задание заключается в поиске 3 чисел из этого массива таких,
+            что их сумма нечетна. В школе он утверждал, что такие 3 числа есть, но Хаято не уверен, поэтому попросил у вас помощи.
+            Скажите, есть ли такие три числа, и если есть, то выведите индексы 𝑖 , 𝑗 и 𝑘 такие, что число 𝑎𝑖+𝑎𝑗+𝑎𝑘
+            нечетное.
+            Нечетными числами называются целые числа, не делящиеся на 2 : 1 , 3 , 5 и так далее.
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            #5 задание
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            Вы разговаривали с Поликарпом и задали ему вопрос. Вы знаете, что когда он хочет ответить «да», он повторяет Yes много раз подряд.
+            Из-за шума вы услышали только часть ответа — некоторую его подстроку. То есть, если он ответил YesYes, то вы могли услышать esY, YesYes, sYes, e, но не могли Yess, YES или se.
+            Определите, правда ли, что заданная строка 𝑠 является подстрокой YesYesYes... (Yes, повторенного много раз подряд).
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            #6 задание
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Вы работаете в службе контроля качества технической поддержки одной большой компании. Ваша работа заключается в том, чтобы проверять, все ли вопросы клиентов были решены.
+            <br>Сегодня вам на проверку прислали копию переписки одного из клиентов со специалистом технической поддержки. По регламенту работы на каждое сообщение клиента должно последовать одно или несколько сообщений, являющихся ответом специалиста поддержки. Однако, иногда клиент задает вопросы настолько быстро, что некоторые из ответов специалиста на старые вопросы появляются уже после того, как клиент задал несколько новых вопросов.
+            <br>Из-за политики конфиденциальности полный текст сообщений вам не доступен, виден лишь порядок сообщений, а также тип каждого сообщения: вопрос клиента или ответ специалиста технической поддержки. Известно, что диалог начался с вопроса клиента.
+            <br>От вас требуется определить, может ли этот диалог соответствовать регламенту работы, описанному выше, или правила работы были точно нарушены.
+            <code>
+              <br>
+              4
+              <br>QQAA  --- (+)
+              <br>4
+              <br>QQAQ  --- (-)
+              <br>3
+              <br>QAA   --- (-)
+            </code>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            #7 задание
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h3>Факторизуйте n + m</h3>
+            У Пака Чанека есть простое число 𝑛 . Найдите простое число 𝑚 такое, что 𝑛+𝑚 не является простым.
+            <br>Простое число — это число с ровно 2 множителями. Первые несколько простых чисел: 2,3,5,7,11,13,…
+            . В частности, 1 не является простым числом.
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            #8 задание
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h3>Быки и коровы</h3>
+            Напишите игру "Быки и Коровы". Ее суть заключается в следующем: Один игкор, загадывает 4 цвета
+            в определенной последовательности, а второй игрок должен отгадать и цвета и в какой последовательности они были загаданы.
+            При первой попытке второй игрок делает свое предположение. После этого первый игрок должен сказать, сколько цветов угадано
+            без совпадения с их позициями в тайной последовательности (то есть количество коров) и сколько угадано вплоть до позиции
+            в тайной последовательности (то есть количество быков).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            #9 задание
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h3>База кошек</h3>
+            В базе данных ветеринарной клиники информация о пациентах-котах хранится в списке кортежей.
+            Данные о кошках и их владельцах записаны в формате «Кличка животного, Возраст животного,
+            Имя владельца, Фамилия владельца»:
+            <code>
+        <br>cats = [('Мартин', 5, 'Алексей', 'Егоров'),
+    	<br>('Фродо', 3, 'Анна', 'Самохина'),
+    	<br>('Вася', 4, 'Андрей', 'Белов'),
+    	<br>('Муся', 7, 'Игорь', 'Бероев'),
+    	<br>('Изольда', 2, 'Игорь', 'Бероев'),
+    	<br>('Снейп', 1, 'Марина', 'Апраксина'),
+    	<br>('Лютик', 4, 'Виталий', 'Соломин'),
+    	<br>('Снежок', 3, 'Марина', 'Апраксина'),
+    	<br>('Марта', 5, 'Сергей', 'Колесников'),
+    	<br>('Буся', 12, 'Алена', 'Федорова'),
+    	<br>('Джонни', 10, 'Игорь', 'Андропов'),
+    	<br>('Мурзик', 1,'Даниил', 'Невзоров'),
+    	<br>('Барсик', 2, 'Виталий', 'Соломин'),
+    	<br>('Рыжик', 7, 'Владимир', 'Медведев'),
+        <br>('Матильда', 8, 'Андрей', 'Белов'),
+    	<br>('Гарфилд', 3, 'Александр', 'Березуев')]
+        <br></code>
+            Обнаружилось, что имена некоторых владельцев повторяются, потому что у них несколько кошек. Необходимо оптимизировать хранение данных таким образом, чтобы для каждого владельца при выводе на печать данные о всех его животных отображались в одной строке:
+            <br>Игорь Бероев: Муся, 7; Изольда, 2
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
