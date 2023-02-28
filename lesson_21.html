@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python 2022-2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        .nav {
+            border-radius: 30px;
+            width: 100%;
+        }
+        main {
+            margin: 40px auto;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV #1 и HEADER -->
+    <div class="top">
+      <div class="container">
+        <div class="row">
+          <!-- NAV #1 -->
+          <!-- HEADER -->
+            <header>
+              <div class="container">
+                <img class="nav" src="nav.png">
+              </div>
+            </header>
+        </div>
+      </div>
+    </div>
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <!-- NAV #2 -->
+          <br>
+          <nav class="col-xl-2">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Практическое занятие 21</li>
+                </ol>
+              </nav>
+          </nav>
+          <!-- ARTICLE -->
+
+          <article class="col-md-8 col-xl-7">
+              <h1 class="header-h1">Практическое занятие 21</h1>
+              <div class="tasks">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                         #1 задание
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                        Напишите программу для регистрации космонавтов для полета на Марс. При регистрации задается только один вопрос: введите ФИО.
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        #2 задание
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                        Модифицируйте программу, чтобы она сама генерировала 100 космонавтов.
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        #3 задание
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                        Методом рандома необходимо выбрать из космонавтов, только 5 для стартового состава и 5 для запасного.
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        #4 задание
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        В день старта оказалось, что один из космонавтов заболел, необходимо заменить его на другого из запасного состава.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        #5 задание
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                        Даны размеры двух cкафандров: 𝑎 и 𝑏 . Размер скафандра — это либо строка M, либо строка, состоящая из нескольких (возможно нуля) символов X и одного из символов: S или L. Например, строки M, XXL, S, XXXXXXXS могут быть размерами некоторых скафандров. А строки XM, LL, SX — не являются размерами.
+                        Буква M обозначает средний размер (от англ. medium), S — маленький (small), L — большой (large). Буква X — степень величины размера (от англ. eXtra). Например, XXL — это экстра-экстра-большой (от больше чем XL, и меньше чем XXXL).
+                        Вам нужно сравнить два заданных размера скафандров 𝑎 и 𝑏 .
+                        <br>Скафандры сравниваются следующим образом:
+                        <br>• любой маленький размер (не зависимо от количества букв X) меньше среднего и любого большого;
+                        <br>• любой большой размер (не зависимо от количества букв X) больше среднего и любого маленького;
+                        <br>• чем больше букв X перед S, тем меньше размер;
+                        <br>• чем больше букв X перед L, тем больше размер.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        #6 задание
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <h3>Двоится в глазах</h3>
+                        <br>
+                        Палиндромом называется строка, которая читается одинаково слева направо и справа налево.
+                        Например, строки 𝚣 , 𝚊𝚊𝚊 , 𝚊𝚋𝚊 и 𝚊𝚋𝚌𝚌𝚋𝚊 — палиндромы, а 𝚌𝚘𝚍𝚎𝚏𝚘𝚛𝚌𝚎𝚜 и 𝚊𝚋 — нет. Удвоением
+                        строки 𝑠 называется строка, полученная записыванием каждой буквы два раза. Например,
+                        удвоение 𝚜𝚎𝚎𝚒𝚗𝚐 — это 𝚜𝚜𝚎𝚎𝚎𝚎𝚒𝚒𝚗𝚗𝚐𝚐 . Вам дана строка 𝑠 . Переставьте буквы в ее удвоении
+                        так, чтобы получился палиндром. Выведите полученную строку. Можно показать, что это
+                        всегда можно сделать.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </article>
+          <!-- ASIDE -->
+          <aside class="col-md-4 col-xl-3">
+              <div class="tasks">
+      <div class="row row-cols-1 row-cols-md-1 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/19.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="lesson_19.html"><h5 class="card-title">Практическое занятие 19</h5></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/18.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="lesson_18.html"><h5 class="card-title">Практическое занятие 18</h5></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/17.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="lesson_17.html"><h5 class="card-title">Практическое занятие 17</h5></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/16.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="lesson_16.html"><h5 class="card-title">Практическое занятие 16</h5></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/15.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="lesson_15.html"><h5 class="card-title">Практическое занятие 15</h5></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/last.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="https://drive.google.com/drive/folders/12XqKjvGApzLK9CtAWzUgIScZr_rG4LSp?usp=sharing"><h5 class="card-title">Прошлые работы</h5></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
